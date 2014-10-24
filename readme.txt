@@ -21,7 +21,7 @@ This plugin is based on <h href="https://wordpress.org/plugins/gravity-forms-dat
 
 **Note:** <a href="http://www.gravityforms.com/" target="_blank">Gravity Forms</a> is required for this plugin.
 
-This plugin is Open Source and pull requests can be made on the <a href="#">Gitgub project page</a>
+This plugin is Open Source and pull requests can be made on the <a href="#">Github project page</a>
 
 == Installation ==
 
