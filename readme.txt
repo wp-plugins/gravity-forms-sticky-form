@@ -1,5 +1,5 @@
 === Gravity Forms Sticky Form ===
-Contributors: asthait, unclhos
+Contributors: fried_eggz
 Tags: gravity, form, data, field, persistence, sticky, add-on, addon, plugin, plug-in, extension, pre, populate
 Requires at least: 2.9.2
 Tested up to: 4.0
