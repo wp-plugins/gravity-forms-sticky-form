@@ -37,7 +37,7 @@ This plugin is Open Source and pull requests can be made on the <a href="#">Gitg
 
 Yes, to some extent. The plugin supports one file upload per form. To output the link to the file use {upload} in a HTML field. Future versions of this plugin will support multiple files.
 
-= How is this plugin diffrent from similar plugins ?=
+= How is this plugin diffrent from similar plugins? =
 
 Sticky Form stores the data in an actual Gravity Forms entry. The advantage is that the entry can be edited on the back end and the new data will be used to populate the form on the front end. 
 
