@@ -1,5 +1,5 @@
 === Gravity Forms Sticky Form ===
-Contributors: asthait, unclhos
+Contributors: fried_eggz
 Tags: gravity, form, data, field, persistence, sticky, add-on, addon, plugin, plug-in, extension, pre, populate
 Requires at least: 2.9.2
 Tested up to: 4.0
@@ -17,7 +17,7 @@ Sticky Form is a WordPress plugin for <a href="http://www.gravityforms.com/" tar
 The stycky form is persistent so that when the user returns, all previous data is pre populated with his/hers previous submission.
 
 #### Persistent Gravity Forms
-Gravity Forms persistens, or stickyness, is usefull if you have a form that acts as a user profile, company profile or in other similar situations where the data needs to be persistant every time a user visits that form. 
+Gravity Forms persistens, or stickyness, is usefull if you have a form that acts as a user profile, company profile or in other similar situations where the data needs to be persistant every time a user visits that form. 	
 
 This plugin is based on <h href="https://wordpress.org/plugins/gravity-forms-data-persistence-add-on-reloaded/">Gravity Forms Data Persistence Add-On Reloaded</a>.
 
