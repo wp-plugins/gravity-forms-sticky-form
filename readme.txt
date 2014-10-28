@@ -29,7 +29,7 @@ This plugin is Open Source and pull requests can be made on the <a href="https:/
 
 <h4>Installation</h4>
 
-1. Upload extracted folder to the `/wp-content/plugins/` directory
+1. Upload extracted folder to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Choose the required sticky settings on the individual form settings page.
 
