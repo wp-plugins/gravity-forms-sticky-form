@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin makes your Gravity Forms sticky.
+A plugin that makes your Gravity Forms stick!
 
 == Description ==
 
