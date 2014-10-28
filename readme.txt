@@ -3,7 +3,7 @@ Contributors: fried_eggz
 Tags: gravity, form, data, field, persistence, sticky, add-on, addon, plugin, plug-in, extension, pre, populate
 Requires at least: 2.9.2
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ Yes, to some extent. The plugin supports one file upload per form. To output the
 Sticky Form stores the data in an actual Gravity Forms entry. The advantage is that the entry can be edited on the back end and the new data will be used to populate the form on the front end. 
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed: Do not pre-populate if the entry is in trash
 
 = 1.0 =
 * Initial release
