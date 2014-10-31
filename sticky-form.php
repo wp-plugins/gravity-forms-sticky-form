@@ -4,7 +4,7 @@
   Plugin URI: https://github.com/13pixlar/gravity-forms-sticky-form
   Description: This is a <a href="http://www.gravityforms.com/" target="_blank">Gravity Form</a> plugin that enables forms to be "sticky". A sticky form stays populated with the users submitted data retrieved from the actual entry.
   Author: Adam Rehal
-  Version: 1.0.1
+  Version: 1.0.2
   Author URI: http://13pixlar.se
   Orginal Plugin by: asthait & unclhos
  */
@@ -59,11 +59,6 @@ function sticky_pre_populate_the_form($form) {
 
                         // Remove non needed items and format the keys correctly
                         foreach ($form_fields as $key => $value) {
-
-                            // Lets the timestamp so we can use it later
-                            if($key == "date_created") {
-                                    $timestamp = $value;
-                                }
                             
                             if (is_numeric($key)) {
                                 array_change_key($form_fields, $key, str_replace(".", "_", "input_$key"));
@@ -73,8 +68,6 @@ function sticky_pre_populate_the_form($form) {
                                     $upload = $value;
                                 }
                                 
-                            } else {
-                                unset($form_fields[$key]);
                             }
                         }
                         
@@ -99,17 +92,6 @@ function sticky_pre_populate_the_form($form) {
         }     
     }
 
-    // Replace {timestamp} with date_created
-    if($timestamp) {
-        foreach ($form["fields"] as &$field) {
-            foreach ($field as $key => &$value) {
-                if($key == "content") {
-                    $value = str_replace("{timestamp}", $timestamp, $value);              
-                }
-            }
-        }     
-    }
-
     return $form;
 }
 
@@ -123,17 +105,21 @@ function sticky_set_post_content($entry, $form) {
         if (is_user_logged_in()) {
 
             $entry_id = sticky_getEntryOptionKeyForGF($form);
-            if (get_option($entry_id)) {
-                
-                //Delete old entry from GF tables
-                if (!$form['isEnableMulipleEntry']) {
-                   RGFormsModel::delete_lead(get_option($entry_id));
-                }
-            }
             update_option($entry_id, $entry['id']);
         }
     }
 }
+
+
+add_filter( 'gform_entry_id_pre_save_lead', 'save_with_same_id', 10, 2 );
+function save_with_same_id( $entry_id, $form ) {
+    if (!$form['isEnableMulipleEntry']) {
+        $entry_id = sticky_getEntryOptionKeyForGF($form);
+        $update_entry_id = get_option($entry_id);
+        return $update_entry_id ? $update_entry_id : $entry_id;
+    }
+}
+
 
 function sticky_getEntryOptionKeyForGF($form) {
 
