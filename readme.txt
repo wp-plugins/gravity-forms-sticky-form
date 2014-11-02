@@ -23,7 +23,7 @@ Gravity Forms persistens, or stickyness, is usefull if you have a form that acts
 Sticky Form uses a new Gravity Forms hook to save the submission to the same entry rather than creating a new entry and deleting the old one. This makes read and starred status stick!
 
 #### Developers ####	
-There is a fully documented version of the plugin on the <a href="https://github.com/13pixlar/gravity-forms-sticky-form">Github project page</a>. This plugin is Open Source and pull requests are wellcome.
+There is a fully documented version of the plugin on the <a href="https://github.com/13pixlar/gravity-forms-sticky-form">Github project page</a>. This plugin is Open Source and pull requests are welcome.
 
 This plugin is based on <h href="https://wordpress.org/plugins/gravity-forms-data-persistence-add-on-reloaded/">Gravity Forms Data Persistence Add-On Reloaded</a>.
 
