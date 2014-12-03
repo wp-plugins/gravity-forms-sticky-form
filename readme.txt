@@ -16,7 +16,7 @@ Sticky Form is a WordPress plugin for <a href="http://www.gravityforms.com/" tar
 
 The sticky form is persistent so that when the user returns, all previous data is pre populated with his/hers previous submission.
 
-**Note:** There is a bug in earlier versions the Gravity Forms API that prevents Sticky Form from working correctly. Please update Gravity Forms. For more information, please see the <a href="https://wordpress.org/plugins/gravity-forms-sticky-form/faq/">FAQ section</a>.
+**Note:** There is a bug in the Gravity Forms API that prevents Sticky Form from working correctly. More information and fix, please see the <a href="https://wordpress.org/plugins/gravity-forms-sticky-form/faq/">FAQ section</a>.
 
 #### Persistent Gravity Forms
 Gravity Forms persistens, or stickyness, is usefull if you have a form that acts as a user profile, company profile or in other similar situations where the data needs to be persistant every time a user visits that form. 
@@ -53,7 +53,7 @@ Also, Sticky Form does not just delete the old entry and save a new one, thus ke
 
 = Some fields do not get updated =
 
-There was a bug in the Gravity Forms api that prevented fields from getting saved in the entry. The bug was fixed in the latest version of Gravity Forms. Make sure you use an <a href="http://www.gravityhelp.com/downloads/">updated version</a>. If you are not able to update Gravity Forms you can easily apply the patch manually to `plugins/gravityforms/includes/api.php`
+There is a bug in previous versions of  Gravity Forms that prevents fields from getting saved in the entry. This was fixed in Gravity Forms 1.8.19.2. Make sure you use an <a href="http://www.gravityhelp.com/downloads/">updated version</a>. If you are not able to update Gravity Forms you can easily apply the patch manually to `plugins/gravityforms/includes/api.php`
 
 On line `510`, remove 
 `
